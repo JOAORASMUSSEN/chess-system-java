@@ -1,7 +1,7 @@
 package boardgame;
 
 public class Piece {
-    protected Position position;
+    protected Position position; //como é protected pode ser acessada por outras classes do mesmo pacote
     private Board board;
 
     public Piece(Board board) {
