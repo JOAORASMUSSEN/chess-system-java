@@ -32,6 +32,16 @@ public class UI {
     public static final String ANSI_CYAN_BACKGROUND = "\u001B[46m";
     public static final String ANSI_WHITE_BACKGROUND = "\u001B[47m";
 
+    // Source - https://stackoverflow.com/a/32295974
+// Posted by satish, modified by community. See post 'Timeline' for change history
+// Retrieved 2026-11-12, License - CC BY-SA 4.0
+
+    public static void clearScreen() {
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
+    }
+
+
     public static ChessPosition readChessPosition(Scanner sc){
         try {
             String s = sc.nextLine();
