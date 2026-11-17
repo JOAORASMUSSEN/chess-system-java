@@ -171,5 +171,11 @@ public class ChessMatch {
         placeNewPiece('c', 8, new Bishop(board, Color.BLACK));
         placeNewPiece('d', 8, new Queen(board, Color.BLACK));
         placeNewPiece('e', 8, new King(board, Color.BLACK));
+        for(char i = 'a'; i <= 'h';  i++){
+            placeNewPiece(i, 2, new Pawn(board, Color.WHITE));
+        }
+        for(char i = 'a'; i <= 'h';  i++){
+            placeNewPiece(i, 7, new Pawn(board, Color.BLACK));
+        }
     }
 }
