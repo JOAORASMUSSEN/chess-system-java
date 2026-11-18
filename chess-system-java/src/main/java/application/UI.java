@@ -128,8 +128,9 @@ public class UI {
         System.out.print("Black pieces captured: ");
         for(ChessPiece c : black){
             System.out.print(ANSI_YELLOW);
-            System.out.println(c + ", ");
+            System.out.print(c + ", ");
         }
+        System.out.print(ANSI_RESET);
         System.out.println();
     }
 }
